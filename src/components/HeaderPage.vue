@@ -15,18 +15,21 @@
 </script>
 
 <template>
-    <div class="container">
-        <ul class="row">
-            <li>
-                <img src="../../public/img/logo.jpg" alt="">
-            </li>
-        </ul>
-        <ul class="row">
-            <li class="col" v-for="link in HeaderLink">
-                <a :href="link.src">{{ link.nome }}</a>
-            </li>
-        </ul>
-    </div>
+    <section class="navbar">
+        <div class="container">
+            <ul class="row">
+                <li>
+                    <img src="../../public/img/logo.jpg" alt="">
+                </li>
+            </ul>
+            <ul class="row">
+                <li class="col" v-for="link in HeaderLink">
+                    <a :href="link.src">{{ link.nome }}</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
 </template>
 
 <style lang="scss" scoped>
@@ -34,7 +37,8 @@
         height: 75px;
         display: flex;
         justify-content: space-between;
-        width: 1200px;
+        max-width: 1200px;
+        min-width: 600px;
         margin: 0 auto;
     }
 
@@ -59,7 +63,10 @@
         }
     }
 
-    img {
-        width: 150px;
+    .navbar img {
+        width: 150px; 
+        z-index: 999;
+        position: absolute;
     }
+
 </style>
