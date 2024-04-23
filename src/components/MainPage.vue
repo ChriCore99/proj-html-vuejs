@@ -1,5 +1,6 @@
 <script>
     import Cards1Component from './Cards1Component.vue'
+    import MacchieCard from './MacchieCard.vue'
 
     export default {
         data(){
@@ -10,11 +11,13 @@
 
         components: {
             Cards1Component,
+            MacchieCard,
         }
     }
 </script>
 
 <template>
+    <!-- immagine di sfondo grnade -->
     <section class="introAndLearn">
         <div class="container BackgroundImg">
             <div class="row">
@@ -31,13 +34,18 @@
         </div>
     </section>
 
+    <!-- testo prime card -->
     <section class="firstCardInfo">
         <h2 class="promotionalTitle">
-            since 2000, weve been partnering with education leaders to <br><span>increase equity and achievement</span> for all students
+            Since 2000, weve been partnering with education leaders to <br><span>increase equity and achievement</span> for all students
         </h2>
     </section>
 
+    <!-- prime card -->
     <Cards1Component />
+
+    <!-- info soto card -->
+    <MacchieCard />
 </template>
 
 <style lang="scss" scoped>
@@ -86,5 +94,6 @@ p {
 
 .firstCardInfo {
     text-align: center;
+    margin-bottom: 70px;
 }
 </style>
