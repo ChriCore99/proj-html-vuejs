@@ -1,29 +1,90 @@
 <script>
+    import Cards1Component from './Cards1Component.vue'
 
+    export default {
+        data(){
+            return{
+
+            }
+        },
+
+        components: {
+            Cards1Component,
+        }
+    }
 </script>
 
 <template>
-        <section>
-                <div class="container">
-                        <div class="row">
-                                <div class="col">
-                                        <h1>ciao</h1>
-                                        <!-- <img class="fotoLearnMore" src="../../public/img/02_Landing-page.jpg" alt="" /> -->
-                                </div>
-                        </div>
+    <section class="introAndLearn">
+        <div class="container BackgroundImg">
+            <div class="row">
+                <div class="col">
+                    <h1>
+                        Professional Development For <br />
+                        Coaches And Leaders
+                    </h1>
+                    <div class="btnContainer">
+                        <p>Learn More</p>
+                    </div>
                 </div>
-        </section>
+            </div>
+        </div>
+    </section>
+
+    <section class="firstCardInfo">
+        <h2 class="promotionalTitle">
+            since 2000, weve been partnering with education leaders to <br><span>increase equity and achievement</span> for all students
+        </h2>
+    </section>
+
+    <Cards1Component />
 </template>
 
 <style lang="scss" scoped>
-        .fotoLearnMore {
-                z-index: -1;
-        }
+.fotoLearnMore {
+  z-index: -1;
+}
 
-        .container {
-                height: 1000px;
-                background-image: url(/public/img/02_Landing-Page.jpg);
-                background-size: contain;
-                background-repeat: no-repeat;
-        }
+.BackgroundImg {
+    height: 1000px;
+    background-image: url(/public/img/02_Landing-Page.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 270px;
+}
+
+p {
+    border: 1px solid black;
+    width: fit-content;
+    padding: 10px 25px 10px 25px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #d74d52;
+        color: white;
+    }
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.promotionalTitle {
+    font-size: 30px;
+
+    span {
+        color: #ff3a2d;
+    }
+}
+
+.firstCardInfo {
+    text-align: center;
+}
 </style>
