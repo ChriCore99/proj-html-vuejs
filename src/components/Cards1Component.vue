@@ -38,7 +38,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        border: 1px solid black;
+        box-shadow: 8px 20px 8px 8px #EEEEEE;
 
         p {
             font-size: 20px;

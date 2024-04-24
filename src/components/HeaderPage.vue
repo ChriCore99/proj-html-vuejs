@@ -50,16 +50,16 @@
     .col {
         margin-top: 25px;
 
-        &:after {
-        content: "";
-        border-bottom: 2px solid #ff3a2d;
-        width: 20px;
-        display: block;
-        padding: 0px;
-        } 
-
         &:hover{
             color: #ff3a2d;
+
+            :after {
+            content: "";
+            border-bottom: 2px solid #ff3a2d;
+            width: 20px;
+            display: block;
+            padding: 0px;
+            } 
         }
     }
 

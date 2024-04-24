@@ -64,7 +64,8 @@
 
     h3 {
         width: 80px;
-        text-align: center;   
+        text-align: center;
+        margin-left: 25px;
     }
 
     .DatiNum {
@@ -73,6 +74,7 @@
 
     .simbol {
         font-size: 30px;
+        margin: 0px 10px;
     }
 
     .Arancio {
