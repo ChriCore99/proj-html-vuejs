@@ -1,6 +1,8 @@
 <script>
     import Cards1Component from './Cards1Component.vue'
     import MacchieCard from './MacchieCard.vue'
+    import BigImages from './BigImages.vue'
+    import MainCourses from './MainCourses.vue'
 
     export default {
         data(){
@@ -12,6 +14,8 @@
         components: {
             Cards1Component,
             MacchieCard,
+            BigImages,
+            MainCourses,
         }
     }
 </script>
@@ -46,6 +50,12 @@
 
     <!-- info soto card -->
     <MacchieCard />
+
+    <!-- corsi principali -->
+    <MainCourses />
+
+    <!-- foto esormi prima del footer -->
+    <BigImages />
 </template>
 
 <style lang="scss" scoped>
