@@ -1,5 +1,19 @@
 <script>
+    import FooterMenus from './FooterMenus.vue'
+    import FooterEnd from './FooterEnd.vue'
 
+    export default {
+        data(){
+            return{
+
+            }
+        },
+
+        components: {
+            FooterMenus,
+            FooterEnd,
+        }
+    }
 </script>
 
 <template>
@@ -16,22 +30,20 @@
                 <div class="col-6">
                     <ul class="subInfo">
                         <li class="longText"> <span>Insights is Picwik</span> University's thought leadership publication for sharing knowledge on management, tecnology and innovation. </li>
-                        <li>Take me there ></li>
+                        <li class="big">Take me there <font-awesome-icon :icon="['fas', 'angle-right']" /></li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- menus and infos -->
-    <section>
-        
-    </section>
+    <FooterMenus />
+
+    <FooterEnd />
 </template>
 
 <style lang="scss" scoped>
 
-    // subscribe button
     .finalInfos {
         background-color: #192735;
         padding-top: 75px;
@@ -71,6 +83,11 @@
         }
     }
 
+    .big {
+        font-weight: bold;
+        cursor: pointer;
+    }
+
     .longText {
         margin-bottom: 10px;
     }
@@ -95,8 +112,5 @@
         cursor: pointer;
         margin-right: 65px;
     }
-
-    // menus and infos
-
 
 </style>

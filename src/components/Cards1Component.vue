@@ -38,7 +38,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        box-shadow: 8px 20px 8px 8px #EEEEEE;
+        box-shadow: 6px 2px 15px 13px #EEEEEE;
 
         p {
             font-size: 20px;
@@ -49,6 +49,10 @@
     .miniTitle {
         font-weight: bold;
         margin: 25px 0px;
+
+        &:hover {
+            color: #ff3a2d;
+        }
     }
 
     .Ptext {
